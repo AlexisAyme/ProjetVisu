@@ -33,3 +33,5 @@ def plot_geo_time_value(x, y, year, value,  axs=None, name='', hue='', **kwargs)
             else:
                 ax.set_title(name+ " " + str(year[i]))
             i=i+1
+    plt.savefig("figure.pdf")
+     
