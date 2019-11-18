@@ -1,7 +1,7 @@
 import pandas as pd 
 df_metro = pd.read_csv("data/data_polution.csv")
 lim_metropole = [-5, 10, 41, 52]
-from ensae2019 import plot_geo_time_value # nos fonctions 
+#from ensae2019 import plot_geo_time_value # nos fonctions 
 import matplotlib.pyplot as plt
 import cartopy.crs as ccrs
 import cartopy.feature as cfeature
