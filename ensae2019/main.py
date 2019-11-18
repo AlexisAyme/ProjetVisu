@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import cartopy.crs as ccrs
 import cartopy.feature as cfeature
+import matplotlib.animation as anim
+from matplotlib.animation import PillowWriter
 
 lim_metropole = [-5, 10, 41, 52]
 
