@@ -19,6 +19,14 @@ def plot_geo_time_value(x, y, year, value,  axs=None, name='', hue='', **kwargs)
     :param hue: sens de la valeur numérique (:math:`CO_2`, Ammoniac, ...)
     :param kwargs: paramètres additionnels
     """
+    if type(years) is not range:
+        Raise NameError("Invalid type for years argument")
+    elif type(x) is not pandas.core.series.Series:
+        Raise NameError("Invalid type for x argument")
+    elif type(y) is not pandas.core.series.Series:
+        Raise NameError("Invalid type for y argument")
+    elif type(values) is not pandas.core.frame.DataFrame:
+        Raise NameError("Invalid type for values argument")
     i=0
     for ax1 in axs :
         for ax in ax1 :
